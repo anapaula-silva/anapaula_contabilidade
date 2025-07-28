@@ -131,12 +131,22 @@
     .contact button {
       background: #003366;
       color: white;
-      border: none;
       padding: 0.8rem;
       border-radius: 5px;
       cursor: pointer;
-    }
+      border: none;
+      height: 50px;
+      width: 100%;
+      max-width: 300px;     
+      transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+}
 
+.contact button:hover {
+   background: #ffd700;
+   color: #003366;
+   transform: translateY(-3px) scale(1.03);
+   box-shadow: 0 4px 16px rgba(0, 51, 102, 0.15);
+}
     footer {
       text-align: center;
       background: #003366;
